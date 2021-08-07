@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300&display=swap');
+
+
+
+body, ul{
+    padding: 0px;
+    margin: 0px;
+}
+<!--navbar responsiva
+#menu a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+#menu a:hover{
+    background: rgba(174, 209, 255, 0.301);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#logo{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+}
+
+#sublogo{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#header{
+    box-sizing: border-box;
+    height: 120px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.726);
+}
+
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: .5rem;
+    
+}
+
+#btn-mobile{
+    display: none;
+}
+
+span{
+    margin-top: 5px;
+}
+
+@media (max-width: 710px) {
+    
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 120px;
+        right: 0px;
+        background: #ffffffa8;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+
+        height: calc(100vh - 120px);
+        visibility: visible;
+        overflow-y: hidden;
+        
+       
+    }
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #00000034;
+        text-decoration: none;
+        color: black;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+
+        border-top-color: transparent;
+        
+    }
+
+    #nav.active #hamburguer::before{
+
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after{
+
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+/*fim do estilo da navbar mobile*/
+
+/*inicia do estilo das sections parallax e thumbs*/
+
+
+
+.parallax{
+    background-image: url(/assets/plano-fundo-montanhas-parallax.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content-site{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.d-block{
+    box-shadow: 3px 3px 5px rgba(36, 46, 78, 0.336);
+}
+
+.h1-bio{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 700;
+}
+
+.p-bio{
+    font-family: 'Mukta', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(192, 192, 192);
+}
+
+.p-bio-2{
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main-btn{
+    background-color: #8280e4;
+    color: white;
+    text-transform: uppercase;
+    width: 130px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-color: #8280e4;
+}
