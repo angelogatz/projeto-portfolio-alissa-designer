@@ -5,146 +5,414 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--unicon-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!---swiper CSS-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!--css main-->
+    <link rel="stylesheet" href="estilos/variaveis.css">
     <link rel="stylesheet" href="estilos/main.css">
+    
 
     <title>Alissa Nomura</title>
   </head>
   <body>
+    <!-----------------------menu de navegação inferior------------------------------------------------>
+    <header>
+      <div class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">Alissa</a>
 
-    <header id="header">
-        <a id="logo" href="">Alissa Nomura
-          <p id="sublogo">Design</p>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                 <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#sobre" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> Sobre
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#serviços" class="nav__link">
+                <i class="uil uil-briefcase-alt" nav__icon></i> Serviços
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contato" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> contact-me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+ </header>
+
+ <!----------------------------------------- MAIN ------------------------------------------------------>
+ <main class="main">
+
+ </main>
+
+ <!----------------------------------------- HOME ------------------------------------------------------>
+
+<section class="home section" id="home">
+
+  <div class="home__container container grid">
+
+    <div class="home__content grid">
+      <div class="home__social">
+        <a href="#" target="_blank" class="home__social-icon">
+          <i class="uil uil-linkedin-alt"></i>
         </a>
-        
-        
-        <nav id="nav">
-            <button id="btn-mobile" aria-expanded="false">
 
-                <span id="hamburguer"></span>
+        <a href="#" target="_blank" class="home__social-icon">
+          <i class="uil uil-dribbble"></i>
+        </a>
 
+        <a href="https://www.instagram.com/alissanomura.design/"  target="_blank" class="home__social-icon">
+          <i class="uil uil-instagram"></i>
+        </a>
 
-            </button>
-            <ul id="menu">
-                <li><a href="index.html">home</a></li>
-                <li><a href="#">Sobre min</a></li>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Orçamento</a></li>
-                <li><a href="#">Alguns trabalhos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="parallax">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <img src="assets/alissa-1000x1000px.jpg" class="rounded-circle mx-auto d-block">
-            <br><br>
-            <h1 class="text-center h1-bio">Olá! Eu sou Alissa  </h1>
-            <p class="lead text-center p-bio">Designer Grafico</p>
-            <p class="text-center p-bio-2">27 anos, Formada em Design de Moda pelo Centro Universitário SENAC <br> Cursando MBA em Marketing pela USP. <br> Na faculdade me apaixonei por Design Gráfico. Em Istambul me apaixonei pelas vendas!</p>
-            <p class="text-center">
-              <a href="#" class="main-btn">Mais Sobre min</a>
-            </p>
-          </div>
-        </div>
       </div>
-
+      <div class="home_img">
+        <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="user-space" clipPathUnits="userSpaceOnUse">
+              <path fill="#FF0066" d="M43.6,-74.6C57.1,-67.7,69,-57.2,78,-44.2C87,-31.2,93,-15.6,92.7,-0.2C92.5,15.3,85.9,30.6,76.7,43.2C67.5,55.9,55.7,65.9,42.4,74.5C29.2,83,14.6,90.2,-0.2,90.5C-15,90.8,-29.9,84.3,-44.3,76.3C-58.6,68.4,-72.4,59.1,-81.3,46.1C-90.2,33.2,-94.2,16.6,-94.1,0C-94,-16.5,-89.9,-33,-81.8,-47.3C-73.7,-61.6,-61.7,-73.8,-47.4,-80.3C-33.1,-86.8,-16.6,-87.6,-0.8,-86.3C15,-85,30.1,-81.6,43.6,-74.6Z" transform="translate(100 100)" />
+            </clipPath>
+          </defs>
       
-    </section>
+          <image class="home__blob-img"  preserveAspectRatio="xMinYMin slice" x='-11' y='-5' xlink:href="assets/alissa-1000x1000px.jpg" clip-path="url(#user-space)"/>
+        </svg>
+      </div>
+      <div class="home__data">
+        <h1 class="home__title">Olá, Eu sou Alissa</h1>
+        <h3 class="home__subtitle">Designer</h3>
+        <p class="home__description">Formada em Design de Moda pelo Centro Universitário SENAC <br> Cursando MBA em Marketing pela USP.</p>
+        <a href="#contact" class="button button--flex">
+         Contact-me <i class="uil uil-message button__icon"></i>
+        </a>
+      </div>
+    </div>
 
-    <br><br>
+    <div class="home__scroll">
+      <a href="#sobre" class="home__scroll-button button--flex">
+        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+        <span class="home__scroll-name">Scroll down</span>
+        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+ <!----------------------------------------- SOBRE ----------------------------------------------------->
+
+<section class="sobre section" id="sobre">
+      <h2 class="section__title">Sobre Min</h2>
+      <span class="section__subtitle">Introdução</span>
+
+      <div class="sobre__container container grid">
+        <img src="assets/placeholder-img-sobre.jpg" alt="" class="sobre__img">
+
+        <div class="sobre__data">
+          <p class="sobre__description">Tenho 27 anos, sou mãe de pet e vivi por alguns anos em Istambul, Turquia.
+            Na faculdade me apaixonei por Design Gráfico. Em Istambul me apaixonei pelas vendas!</p>
+
+            <div class="sobre__info">
+              <div>
+                <span class="sobre__info-title">08+</span>
+                <span class="sobre__info-name">Place <br> holder</span>
+              </div>
+
+              <div>
+                <span class="sobre__info-title">20+</span>
+                <span class="sobre__info-name">Place <br> holder</span>
+              </div>
+
+              <div>
+                <span class="sobre__info-title">05+</span>
+                <span class="sobre__info-name">Place <br> holder</span>
+              </div>
+            </div>
+
+            
+        </div>
+      </div>
+</section>
+
+<!----------------------------------------- portfolio ---------------------------------------------------->
+
+
+<section class="portfolio section" id="portfolio">
+  <h2 class="section__title">Portfolio</h2>
+  <span class="section__subtitle">Trabalhos mais recentes</span>
+
+  <div class="portfolio__container container swiper-container">
+    <div class="swiper-wrapper">
+      <!----------------------------------------- portfolio 1 ---------------------------------------------------->
+      <div class="portfolio__content grid swiper-slide">
+        <img src="assets/placeholder-img-sobre.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Something here</h3>
+          <p class="portfolio__descritpion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora</p>
+        </div>
+      </div>
+
+      <!----------------------------------------- portfolio 2 ---------------------------------------------------->
+      <div class="portfolio__content grid swiper-slide">
+        <img src="assets/placeholder-img-sobre.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Something here</h3>
+          <p class="portfolio__descritpion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora</p>
+        </div>
+      </div>
+
+      <!----------------------------------------- portfolio 3 ---------------------------------------------------->
+      <div class="portfolio__content grid swiper-slide">
+        <img src="assets/placeholder-img-sobre.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Something here</h3>
+          <p class="portfolio__descritpion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora</p>
+        </div>
+      </div>
+
+      <!----------------------------------------- portfolio 4 ---------------------------------------------------->
+      <div class="portfolio__content grid swiper-slide">
+        <img src="assets/placeholder-img-sobre.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Something here</h3>
+          <p class="portfolio__descritpion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora</p>
+        </div>
+      </div>
+
+      <!----------------------------------------- portfolio 5 ---------------------------------------------------->
+      <div class="portfolio__content grid swiper-slide">
+        <img src="assets/placeholder-img-sobre.jpg" alt="" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Something here</h3>
+          <p class="portfolio__descritpion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora</p>
+        </div>
+      </div>
+    </div>
+
+    <!---portfolio arrows-->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!---portfolio arrows-->
+
+    <div class="swiper-pagination"></div>
+
+  </div>
+</section>
+
+
+ <!----------------------------------------- SKILLS ---------------------------------------------------->
+
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">Meus niveis de conhecimento</span>
+
+  <div class="skills__container container grid">
+     
+        <!------------------------ SKILLS -------------------------------->
+        <div class="skills__content skills__open">
+          <div class="skills__header">
+            <i class="uil uil-illustration skills__arrow"></i>
+
+            <div>
+              <h1 class="skills__title">Designer Grafico</h1>
+              <span class="skills__subtitle">Mais de n anos</span>
+            </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+          </div>
+
+          <div class="skills__list grid">
+            <div class="skills_data">
+              <div class="skills__titles">
+                <h3 class="skills__name">SkillPH</h3>
+                <span class="skills__number">90%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__porcentagem skills__PH"></span>
+              </div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills__titles">
+                <h3 class="skills__name">SkillPH2</h3>
+                <span class="skills__number">80%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__porcentagem skills__PH2"></span>
+              </div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills__titles">
+                <h3 class="skills__name">SkillPH3</h3>
+                <span class="skills__number">60%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__porcentagem skills__PH3"></span>
+              </div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills__titles">
+                <h3 class="skills__name">SkillPH4</h3>
+                <span class="skills__number">50%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__porcentagem skills__PH4"></span>
+              </div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills__titles">
+                <h3 class="skills__name">SkillPH5</h3>
+                <span class="skills__number">77%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__porcentagem skills__PH5"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+    </div>
+  </div>
+</section>
+
+
+ <!----------------------------------------- contact-me ---------------------------------------------->
+
+<section class="contato section" id="contato">
+
+  <h2 class="section__title">Contacte-me</h2>
+  <span class="section__subtitle">Toque para copiar</span>
+  <div class="contato__container container grid">
+    <div>
+      <div class="contato__informacao">
+        <i class="uil uil-phone contato__icon"></i>
+
+        <div>
+          <h3 class="contato__title">Me ligue</h3>
+          <span class="contato__subtitle">444-333-666</span>
+        </div>
+
+        <div class="contato__informacao">
+          <i class="uil uil-envelope contato__icon"></i>
+  
+          <div>
+            <h3 class="contato__title">E-mail</h3>
+            <span class="contato__subtitle">example.ex@example.com</span>
+          </div>
+
+          <div class="contato__informacao">
+            <i class="uil uil-map-marker contato__icon"></i>
+    
+            <div>
+              <h3 class="contato__title">Localização</h3>
+              <span class="contato__subtitle">Brazil - São Paulo</span>
+            </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+ <!----------------------------------------- SCROLL TOP -------------------------------------------------->
+
+<a href="" class="scrollup" id="scroll-up">
+  <i class="uil uil-arrow-circle-up scrollup__icon"></i>
+</a>
+
+
+ <!----------------------------------------- footer ------------------------------------------------->
+
+ <footer class="footer">
+   <div class="footer__bg">
+     <div class="footer__container container grid">
+       <div>
+         <h1 class="footer__title">Alissa</h1>
+         <span class="footer__subtitle">Designer Grafico</span>
+       </div>
+
+       <ul class="footer__links">
+         <li>
+           <a href="#services" class="footer__link">Serviços</a>
+         </li>
+
+         <li>
+          <a href="#portfolio" class="footer__link">Portfolio</a>
+        </li>
+
+        <li>
+          <a href="#contato" class="footer__link">Contate-me</a>
+        </li>
+        
+       </ul>
+
+       <div class="footer__socials">
+         <a href="https://www.facebook.com/alissanomura" target="_blank" class="footer__social">
+
+          <i class="uil uil-facebook-f"></i>
+         </a>
+
+         <a href="https://www.instagram.com/alissanomura.design/" target="_blank" class="footer__social">
+          <i class="uil uil-instagram"></i>
+           
+        </a>
+
+        <a href="#" target="_blank" class="footer__social">
+          <i class="uil uil-linkedin-alt"></i>
+        </a>
+       </div>
+     </div>
+     
+   </div>
+ </footer>
  
-    <section class="content-side">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-xs-12">
-
-            <h1 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim perferendis vitae esse, sapiente, minus</h1>
-
-            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo consectetur rerum et, harum fugiat praesentium. Natus hic at, consequatur eveniet ut corporis, asperiores molestiae possimus fugit eos, maiores voluptas odit.</p>
 
 
-          </div>
-        </div>
-
-        <div class="row">
-
-
-          <div class="col-sm-4">
-            <div class="img-thumbnail text-center">
-              <img src="assets/fotos-container-promo-1.jpg" class="rounded ">
-              <div class="caption text-center">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magni tempore ullam, sint expedita provident earum. Numquam dignissimos</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="img-thumbnail text-center">
-              <img src="assets/fotos-container-promo-2.jpg">
-              <div class="caption text-center">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magni tempore ullam, sint expedita provident earum. Numquam dignissimos</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="img-thumbnail text-center">
-              <img src="assets/fotos-container-promo-3.jpg" alt="">
-              <div class="caption text-center">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magni tempore ullam, sint expedita provident earum. Numquam dignissimos</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section class="img-site">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <h1 class="text-center">Faça seu orçamento</h1>
-            <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusantium nesciunt voluptates.</p>
-            <p class="text-center">
-              <a href="#" class="btn btn danger">Ver mais</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="footer-site">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-
-
-          </div>
-        </div>
-      </div>
-    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    <script src="mobile-navbar.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/navbarinf.js"></script>
+    <script src="js/mobile-navbar.js"></script>
     
   </body>
 </html>
