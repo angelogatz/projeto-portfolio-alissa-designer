@@ -287,6 +287,10 @@ img{
     font-size: var(--big-font-size);
 }
 
+.home___title{
+    color: #FFF;
+}
+
 .home__subtitle{
     font-size: var(--h3-font-size);
     color: var(--text-color);
@@ -331,7 +335,7 @@ img{
 .button{
     display: inline-block;
     background-color: var(--firs-color);
-    color: #FFF;
+    color: black;
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
@@ -339,7 +343,8 @@ img{
 }
 
 .button:hover{
-    background-color: var(--firs-color-lighter);
+    
+    color: #FFF;
 }
 
 .button__icon{
@@ -491,6 +496,8 @@ img{
 }
 
 
+
+
 /*=====================PORTFOLIO=================*/
 
 .portfolio__container{
@@ -622,7 +629,18 @@ img{
 
 
 .parallax{
-    background-image: url(/assets/plano-fundo-montanhas-parallax.jpg);
+    background-image: url(/assets/land-scape-parallax.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.parallax_index{
+    background-image: url(/assets/parallax__index.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -660,7 +678,7 @@ img{
 }
 
 .main-btn{
-    background-color: #8280e4;
+    background-color: rgb(222, 171, 156);
     color: white;
     text-transform: uppercase;
     width: 130px;
@@ -675,5 +693,5 @@ img{
     text-decoration: none;
     color: white;
     background-color: transparent;
-    border-color: #8280e4;
+    border-color: rgb(222, 171, 156);
 }

@@ -1,0 +1,264 @@
+/*=================================== GOOGLE FONTS ===========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/*=================================== VARIAVEIS CSS ===========================================*/
+:root{
+    --header-height: 3rem;
+    --font-semi: 600;
+    --font-bold: 700;
+}
+
+/*=================================== CORES ===========================================*/
+:root{
+    --first-color: #E55947;
+    --first-color-alt: #D2321E;
+    --white-color: #FAFAFF;
+    --dark-color: #101010;
+    --dark-color-light: #606060;
+    --gray-color: #F0F1F3;
+}
+
+/*=================================== FONT E TIPOGRAFIA ===========================================*/
+:root{
+    --body-font: 'Open Sans', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .75rem;
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --big-font-size: 6rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .813rem;
+    }
+}
+
+/*=================================== MARGENS ===========================================*/
+:root{
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+}
+
+/*=================================== Z - INDEX ===========================================*/
+:root{
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*=================================== BASE ===========================================*/
+*,::before,::after{
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-height);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*=================================== CLASS CSS ===========================================*/
+
+.section{
+    padding: 3rem 0;
+
+}
+
+.section-title{
+    font-size: var(--h2-font-size);
+    color: var(--dark-color);
+    margin: var(--mb-4) 0 var(--mb-1);
+    text-align: center;
+}
+
+.section-all{
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    color: var(--dark-color-light);
+    text-align: center;
+    margin-bottom: var(--mb-2);
+}
+
+/*=================================== LAYOUT ===========================================*/
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid ;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: hsl(var(--hue-color), 30%, 74%);
+    
+}
+
+/*=================================== NAV ===========================================*/
+
+.nav2{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav___logo{
+    font-weight: var(--font-bold);
+}
+
+.nav___logo:hover{
+    color: #FFF;
+}
+
+.nav__insta{
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.nav__insta:hover{
+    color: rgb(167, 147, 141);
+    cursor: pointer;
+}
+
+/*=================================== HOME ===========================================*/
+
+.home{
+    background-color: hsl(var(--hue-color), 30%, 74%);
+}
+
+.home___container{
+    height: calc(100vh - var(--header-height));
+    margin-left: 12px;
+}
+
+.home___data{
+    padding-top: 6rem;
+}
+
+.home___title{
+    align-self: center;
+    font-size: var(--big-font-size);
+    line-height: 1;
+    letter-spacing: .5rem;
+    margin-bottom: 4rem;
+}
+
+.home___title:hover{
+    color: #FFF;
+}
+
+.home___title span{
+    font-size: var(--h1-font-size);
+}
+
+
+.home___img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    margin-bottom: 300px;
+}
+
+.home___colect{
+    color: #FFF;
+}
+
+.home___colect-link{
+    font-family: var(--body-font);
+    font-size: var(--h2-font-size);
+}
+
+/*=================================== SHOW MENU ===========================================*/
+
+.modal-header{
+    background-color: hsl(var(--hue-color), 30%, 74%);
+    color: #FFF;
+}
+
+.modal-footer{
+    background-color: hsl(var(--hue-color), 30%, 74%);
+}
+
+
+.modal-button{
+    background-color: rgb(153, 118, 107);
+    color: white;
+    text-transform: uppercase;
+    width: 100px;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 7px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.modal-button:hover{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-color: rgb(222, 171, 156);
+}
+
+.promo-button{
+    background-color: rgb(153, 118, 107);
+    color: white;
+    text-transform: uppercase;
+    width: 80px;
+    height: 40px;
+    padding: 0px 5px;
+    border-radius: 7px;
+    border: 3px solid transparent;
+    transition: .5s;
+    font-size: 15px;
+}
+
+.promo-button:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(222, 171, 156);
+    
+}
