@@ -68,6 +68,7 @@ body{
     font-size: var(--normal-font-size);
     color: var(--dark-color);
     line-height: 1.6;
+    
 }
 
 h1,h2,p{
@@ -207,6 +208,8 @@ img{
     color: #FFF;
 }
 
+
+
 .home___colect-link{
     font-family: var(--body-font);
     font-size: var(--h2-font-size);
@@ -300,6 +303,17 @@ img{
     
 }
 
+
+svg{
+    width: 100px;
+   
+}
+
+
+
+
+
+
 /*FOR SMALL DEVICES*/
 @media screen and (max-width: 360px) {
 
@@ -314,11 +328,17 @@ img{
         grid-template-columns: .25fr 3fr;
     }
 
-    
+    .thumb__mg{
+        padding: 20px;
+    }
 
     .bigger{
         font-size: 40px;
     }
+
+   .home_drag{
+       margin-top: -50px;
+   }
 
     
     
