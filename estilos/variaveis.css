@@ -140,6 +140,10 @@ img{
     
 }
 
+.img-rouded{
+    box-shadow: 3px 4px 5px rgba(165, 143, 132, 0.479);
+}
+
 /*=================================== NAV ===========================================*/
 
 .nav2{
@@ -303,14 +307,17 @@ img{
     background-color: rgb(153, 118, 107);
     color: white;
     text-transform: uppercase;
-    width: 80px;
-    height: 40px;
+    width: 107px;
+    height: 45px;
     padding: 0px 5px;
     border-radius: 7px;
     border: 3px solid transparent;
     transition: .5s;
-    font-size: 15px;
+    font-size: 14px;
+    
 }
+
+
 
 .promo-button:hover{
     text-decoration: none;

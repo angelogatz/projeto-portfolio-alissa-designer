@@ -106,7 +106,7 @@ img{
 
 /*=========== REUSABLE CSS CLASSES =======*/
 .section{
-    padding: 2rem 0 4rem;
+    padding: 3rem 0 4rem;
 }
 
 .section__title{
@@ -388,6 +388,8 @@ img{
     align-self: center;
 }
 
+
+
 .sobre__description{
     text-align: center;
     margin-bottom: var(--mb-2-5);
@@ -414,6 +416,9 @@ img{
     display: block;
     text-align: center;
 }
+
+
+
 
 /*------------------------ SKILLS -------------------------------->*/
 
@@ -669,6 +674,27 @@ img{
 
 
 /*FOR MEDIUM DEVICES*/
+
+@media screen and (max-width: 568px){
+    .sobre__container{
+        column-gap: 2rem;
+        background-color: var(--firs-color);
+        border-radius: 10px;
+        color: white;
+    }
+
+    .sobre__img{
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .section__subtitle{
+        font-size: 17px;
+        text-align: center;
+    }
+    
+}
+
 @media screen and (min-width: 568px){
     .home__content{
         grid-template-columns: max-content 1fr 1fr;
@@ -688,6 +714,8 @@ img{
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -767,15 +795,21 @@ img{
     }
 
     .sobre__container{
-        column-gap: 5rem;
+        column-gap: 2rem;
+        background-color: var(--firs-color);
+        border-radius: 10px;
+        color: white;
     }
 
     .sobre__img{
         width: 350px;
+        margin-top: -180px;
     }
 
     .sobre__description{
-        text-align: initial;
+        text-align: unset;
+        margin-left: -150px;
+        margin-top: 30px;
     }
 
     .sobre__info{
@@ -802,8 +836,8 @@ img{
     }
 
     .footer__links{
-        flex-direction: row;
-        column-gap: 3rem;
+        flex-direction: column;
+        column-gap: 5rem;
     }
 
     .footer__socials{
@@ -872,7 +906,7 @@ img{
 
 
 .parallax{
-    background-image: url(/assets/Alissa-hotel-capadocia.jpeg);
+    background-image: url(/assets/Alissa-hotel.jpg);
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
