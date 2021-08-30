@@ -408,7 +408,11 @@ svg{
 
     
 }
-
+@media screen and (max-width: 768px){
+    .home___title{
+        font-size: 20px;
+    }
+}
 
 @media screen and (min-width: 768px){
     
