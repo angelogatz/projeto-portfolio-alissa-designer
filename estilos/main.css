@@ -113,6 +113,8 @@ img{
     font-size: var(--h1-font-size);
 }
 
+
+
 .section__subtitle{
     display: block;
     font-size: var(--small-font-size);
@@ -138,7 +140,7 @@ img{
 
 .header{
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
@@ -157,6 +159,11 @@ img{
 
 .nav__logo{
     margin-left: var(--mb-0-75);
+}
+
+.img__logo__adjust{
+    width: 150px;
+    margin-top: 15px;
 }
 
 .nav__logo,
@@ -193,6 +200,17 @@ img{
         transition: .3s;
         
     }
+
+    .img__logo__adjust{
+        width: 70px;
+        margin: 0px;
+        margin-left: 10px;
+        
+    }
+
+    .header{
+        position: fixed;
+    }
 }
 
 .nav__list{
@@ -210,6 +228,8 @@ img{
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
+
+
 
 .nav__link:hover{
     color: var(--firs-color);
@@ -237,6 +257,7 @@ img{
 
 .show-menu{
     bottom: 0;
+    margin-bottom: 0;
 }
 
 /*=================================== HOME ===============================================*/
@@ -505,13 +526,14 @@ img{
 }
 
 .portfolio__content{
-    padding: 0 1.5rem;
+    padding: 0 .5rem;
 }
 
 .portfolio__img{
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    
 }
 
 .portfolio__title{
@@ -668,6 +690,13 @@ img{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .portfolio__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
 @media screen and (min-width: 768px){
     .container{
         margin-left: auto;
@@ -687,6 +716,8 @@ img{
         top: 0;
         bottom: initial;
     }
+
+    
 
     .header,
     .main,
@@ -754,9 +785,11 @@ img{
     .portfolio__img{
         width: 320px;
     }
+
     .portfolio__content{
-        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
     }
+    
 
     
 
@@ -839,8 +872,8 @@ img{
 
 
 .parallax{
-    background-image: url(/assets/land-scape-parallax.jpg);
-    background-position: center top;
+    background-image: url(/assets/Alissa-hotel-capadocia.jpeg);
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -851,14 +884,14 @@ img{
 }
 
 .parallax_index{
-    background-image: url(/assets/parallax__index.jpg);
+    background-image: url(/assets/banner_paralax-index.jpeg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .content-site{
