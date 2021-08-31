@@ -357,7 +357,7 @@ img{
     display: inline-block;
     background-color: var(--firs-color);
     color: black;
-    padding: 1rem;
+    padding: .75rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
 
