@@ -308,9 +308,7 @@ img{
     font-size: var(--big-font-size);
 }
 
-.home___title{
-    color: #FFF;
-}
+
 
 .home__subtitle{
     font-size: var(--h3-font-size);
@@ -360,7 +358,7 @@ img{
     padding: .75rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
-
+    transform: translateY(90px);
 }
 
 .button:hover{
@@ -377,6 +375,7 @@ img{
 .button--flex{
     display: inline-flex;
     align-items: center;
+    
 }
 
 /*==================SOBRE====================*/
