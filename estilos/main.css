@@ -388,6 +388,12 @@ img{
 }
 
 
+.red{
+    color: hsl(var(--hue-color), 90%, 80%);
+    
+}
+
+
 
 .sobre__description{
     text-align: center;
@@ -916,7 +922,7 @@ img{
 
 
 .parallax{
-    background-image: url(/assets/Alissa-hotel-2.jpeg);
+    background-image: url(/assets/Alissa-hotel-2.jpg);
     background-position: center center;
     width: 100%;
     background-size: cover;
