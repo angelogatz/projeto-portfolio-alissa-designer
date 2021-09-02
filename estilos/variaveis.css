@@ -212,7 +212,10 @@ img{
 
 .home___title span{
     font-size: 20px;
+    
 }
+
+
 
 
 .home___img{
@@ -348,12 +351,25 @@ svg{
 
 
 /*FOR SMALL DEVICES*/
+
+@media screen and (max-width: 390px){
+    .home___title{
+        margin-top: 200px;
+    }
+ 
+}
+
+
+
 @media screen and (max-width: 360px) {
 
     .nav__menu{
         padding: 2rem .25rem 4rem;
         
     }
+
+
+
     .nav__list{
         column-gap: 0;
     }
@@ -373,6 +389,7 @@ svg{
        margin-top: -50px;
    }
 
+   
     
     
     

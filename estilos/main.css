@@ -724,6 +724,15 @@ img{
         grid-template-columns: repeat(1, 1fr);
     }
     
+    .sobre__container{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: var(--firs-color);
+        color: white;
+    }
+    .sobre__img{
+        width: 300px;
+        transform: translateY(30px);
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -908,7 +917,7 @@ img{
 
 .parallax{
     background-image: url(/assets/Alissa-hotel.jpg);
-    background-position: center ;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
