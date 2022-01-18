@@ -105,3 +105,33 @@ var myInput = document.getElementById('myInput')
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
+
+/*==================== paralax ====================*/
+
+window.addEventListener('scroll', function () {
+    const parallax = document.querySelector('.parallax');
+    let scrollPosition = window.pageYOffset;
+
+    parallax.style.transform = 'translateY(' + scrollPosition * .4 + 'px)';
+});
+
+/*==================== load reveal ====================*/
+
+window.addEventListener('load', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}

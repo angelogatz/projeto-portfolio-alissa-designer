@@ -266,7 +266,7 @@ img{
     margin-left: 555px;
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi);
-    color: rgb(153, 118, 107);
+    color: #4D4D4D;
     font-family: var(--body-font);
 }
 
@@ -275,7 +275,7 @@ img{
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: rgba(153, 118, 107, 0.192);
+    background-color: #E6E6E6;
     border-radius: 20px;
     margin-bottom: -200px;
 }
@@ -302,8 +302,9 @@ img{
 }
 
 
+
 .modal-button{
-    background-color: rgb(153, 118, 107);
+    background-color: #A68478;
     color: white;
     text-transform: uppercase;
     width: 100px;
@@ -317,12 +318,12 @@ img{
 .modal-button:hover{
     text-decoration: none;
     color: white;
-    background-color: transparent;
-    border-color: rgb(222, 171, 156);
+    border: 3px solid transparent;
+    background-color: #b88e80;
 }
 
 .promo-button{
-    background-color: rgb(153, 118, 107);
+    background-color: #A68478;
     color: white;
     text-transform: uppercase;
     width: 107px;
@@ -339,8 +340,8 @@ img{
 
 .promo-button:hover{
     text-decoration: none;
-    color: white;
-    background-color: rgb(222, 171, 156);
+    color: #A68478;
+    background-color: #D1B2A9;
     
 }
 
