@@ -910,10 +910,13 @@ img{
     .footer__links{
         flex-direction: column;
         column-gap: 5rem;
+        
     }
 
-    .footer__socials{
-        justify-self: flex-end;
+    
+
+    .footer__bg-grafitte{
+        height: 40vh;
     }
 }
 
@@ -933,6 +936,7 @@ img{
 
     .footer{
         transform: translateY(2.92rem);
+        
     }
 
     
@@ -1014,7 +1018,7 @@ img{
 }
 
 .footer__bg-grafitte{
-    background-image: url(/assets/background.jpg);
+    background-image: url(/assets/background-2.jpg);
     background-position: center center;
     width: 100%;
     background-size: cover;
