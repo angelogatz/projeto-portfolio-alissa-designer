@@ -118,13 +118,13 @@ img{
 /*=================================== LAYOUT ===========================================*/
 
 .bd-grid{
-    max-width: 1024px;
-    display: grid ;
-    grid-template-columns: 100%;
-    column-gap: 2rem;
-    width: calc(100% - 3rem);
-    margin-left: var(--mb-3);
-    margin-right: var(--mb-3);
+    width: 100%;
+    display: inline-flex;
+    
+    
+   
+    
+    
 }
 
 .header{
@@ -360,6 +360,26 @@ svg{
     
 }
 
+.contato__pct{
+    padding-top: 200px;
+    padding-bottom: 30px;
+    
+}
+
+.contato__pct-sec{
+    max-width: 100%;
+}
+
+.contato__pct-link{
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+.contato__pct-text{
+    font-size: 25px;
+    color: #4D4D4D;
+    line-height: 1;
+}
 
 
 
@@ -490,8 +510,9 @@ svg{
         margin-bottom: -100px;
     }
 
-    .home___data{
-        margin-bottom: -200px;
+    .contato__pct-text{
+        font-size: 20px;
+        
     }
 
     
@@ -543,6 +564,9 @@ svg{
         text-align: center;
     }
 
+    .contato__pct{
+        padding-top: 0;
+    }
     
 }
 
@@ -714,6 +738,10 @@ svg{
      .logo{
         margin: auto;
         
+    }
+
+    .contato__pct{
+        padding-bottom: 100px;
     }
 }
 
