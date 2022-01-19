@@ -210,7 +210,7 @@ img{
     }
 
     .img__logo__adjust{
-        width: 70px;
+        width: 150px;
         margin: 0px;
         margin-left: 10px;
         
@@ -781,6 +781,7 @@ img{
 
     .footer__bg-grafitte{
         height: 50vh;
+        margin-bottom: 10px;
     }
     
     
