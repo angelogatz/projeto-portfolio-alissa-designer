@@ -781,7 +781,11 @@ img{
 
     .footer__bg-grafitte{
         height: 50vh;
-        margin-bottom: 10px;
+        
+    }
+
+    .footer__socials{
+        margin-bottom: 60px;
     }
     
     
