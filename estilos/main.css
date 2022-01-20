@@ -610,14 +610,13 @@ img{
     padding-top: 2rem;
 }
 
-.footer__container{
-    row-gap: 3.5rem;
-}
+
 
 .footer__bg{
     background-color: #a68478;
     padding: 2rem 0 3rem;
 }
+
 
 
 
@@ -685,6 +684,38 @@ img{
 /*====================MEDIA QUERIES==============================*/
 
 /*FOR SMALL DEVICES*/
+
+@media screen and (min-width: 320px) and (min-height: 480px){
+
+    .footer__container{
+        row-gap: 2.5rem;
+    }
+
+    .footer__container{
+        transform: translateY(-85px);
+    }
+
+    
+}
+@media screen and (max-width: 290px){
+
+    .footer__title{
+        width: 90px;
+        margin-left: 0;
+     }
+     .footer__bg-grafitte{
+        height: 70vh;
+    }
+
+    .footer__container{
+        row-gap: 1rem;
+    }
+
+    ol , ul{
+        padding-left: 1rem;
+    }
+}
+
 @media screen and (max-width: 350px) {
 
     .nav__menu{
@@ -702,8 +733,19 @@ img{
     }
 
     
+    
 }
 
+@media screen and (min-width: 350px){
+   .footer__title{
+       width: 120px;
+       margin-left: 40px;
+    }
+
+    .footer__container{
+        row-gap: 3.5rem;
+    }
+}
 
 /*FOR MEDIUM DEVICES*/
 
@@ -727,6 +769,14 @@ img{
 
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__bg-grafitte{
+        height: 66vh;
+    }
+
+    .footer__socials{
+        transform: translateY(-65px);
     }
 
    
@@ -755,6 +805,15 @@ img{
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .footer__title{
+        width: 120px;
+        margin-left: 40px;
+    }
+
+    
+
+    
+
 
     
 }
@@ -774,19 +833,14 @@ img{
         transform: translateY(30px);
     }
 
-    .footer__title{
-        width: 120px;
-        margin-left: 40px;
-    }
+    
 
     .footer__bg-grafitte{
         height: 60vh;
         
     }
 
-    .footer__socials{
-        margin-bottom: 60px;
-    }
+    
     
     
 }
@@ -900,7 +954,7 @@ img{
     .footer__title{
         width: 150px;
         margin-left: -10px;
-        transform: translateY(-60px);
+        transform: translateY(-10px);
     }
     
 
@@ -927,6 +981,16 @@ img{
 
 
 /*FOR LARGE DEVICES*/
+
+@media screen and (min-width: 768px) and (min-height: 1024px){
+
+    .footer__bg-grafitte{
+        height: 10vh;
+       
+    }
+    
+}
+
 
 @media screen and (min-width: 1024px){
     .header,
@@ -980,7 +1044,7 @@ img{
     .footer__title{
         width: 170px;
         margin-left: -100px;
-        transform: translateY(-75px);
+        transform: translateY(-15px);
     }
 
     
