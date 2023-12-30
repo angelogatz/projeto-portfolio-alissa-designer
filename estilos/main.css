@@ -307,7 +307,7 @@ img{
 }
 
 .home__blob-img{
-    width: 220px;
+    width: 200px;
 }
 
 .home__data{
@@ -330,6 +330,7 @@ img{
 .home__description{
     margin-bottom: var(--mb-2);
     color: #A68478;
+    width: 367px;
 }
 
 .home__scroll{
@@ -402,13 +403,13 @@ img{
     align-self: center;
 }
 
-
 .red{
     color: #D1B2A9;
-    
 }
 
-
+.sobre__container{
+    max-width: 1080px;
+}
 
 .sobre__description{
     text-align: center;
@@ -444,6 +445,15 @@ img{
 
 /*------------------------ SKILLS -------------------------------->*/
 
+.single-itens-section{
+    max-width: 97%;
+}
+
+.single-itens-section .single-info-container{
+    max-width: 200px;
+    margin-left: 75px;
+}
+
 .skills__container{
 
     row-gap: 0;
@@ -471,6 +481,15 @@ img{
 }
 
 .skills__subtitle{
+    font-size: var(--small-font-size);
+    color: #A68478;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    width: 200px;
+}
+
+.skills__subtitle-pcts{
     font-size: var(--normal-font-size);
     color: #A68478;
 }
@@ -547,6 +566,11 @@ img{
 
 
 /*=====================PORTFOLIO=================*/
+
+.portfolio__subtitle{
+    margin-top: 10px;
+    white-space: nowrap;
+}
 
 .portfolio__container{
     overflow: initial;
@@ -694,7 +718,6 @@ img{
     .footer__container{
         transform: translateY(-85px);
     }
-
     
 }
 @media screen and (max-width: 290px){
@@ -833,6 +856,20 @@ img{
         transform: translateY(30px);
     }
 
+    .single-itens-section .single-info-container{
+        max-width: 240px;
+        margin-left: 75px;
+    }
+
+    .skills__subtitle{
+        font-size: var(--normal-font-size);
+        color: #A68478;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        width: 200px;
+    }
+
     
 
     .footer__bg-grafitte{
@@ -929,7 +966,7 @@ img{
 
     .sobre__img{
         width: 350px;
-        margin-top: -180px;
+        margin-top: -10px;
     }
 
     .sobre__description{
